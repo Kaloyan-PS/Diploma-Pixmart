@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="mystyle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;700&display=swap" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixmart</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="nav-menu">
+          <div class="header-logo">
+            <a href="index.html"><img src="img/icons/pixmart-logo.svg" alt="img" /></a>
+          </div>
+
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#">About</a></li>
+            <li class="nav-item"><a href="catalog.html">Products</a></li>
+            <li class="nav-item"><a href="#">Creators</a></li>
+            <li class="nav-item"><a href="blog.html">Blog</a></li>
+            <li class="nav-item"><a href="contacts.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="nav-buttons">
+          <div class="search-form">
+            <form class="search">
+              <input type="search" placeholder="Search for Digital Assets" class="search-button" />
+            </form>
+          </div>
+
+          <div class="shopping-cart">
+            <a href="#"><img src="img/icons/buttons-symbols/shopping-bag.svg" alt="img" /></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="catalog-intro">
+      <h1>
+        Explore Top <br />
+        <span>UI Kits</span> Design Asssets
+      </h1>
+    </div>
+
+    <main class="catalog-page">
+      <aside class="side-filter-section">
+        <div class="filters-card">
+          <h4 class="filter-name">Categories</h4>
+
+          <div class="filter-card-content">
+            <ul class="filters-list">
+              <li class="filter"><input class="checkbox-filter" type="checkbox" /> <label>All Categories</label></li>
+              <li class="filter"><input class="checkbox-filter" type="checkbox" /> <label>Technology</label></li>
+              <li class="filter"><input class="checkbox-filter" type="checkbox" /> <label>Travel & Tourism</label></li>
+              <li class="filter"><input class="checkbox-filter" type="checkbox" /> <label>Health & Fitness</label></li>
+              <li class="filter"><input class="checkbox-filter" type="checkbox" /> <label>E-commerce</label></li>
+              <li class="filter"><input class="checkbox-filter" type="checkbox" /> <label>Education</label></li>
+              <li class="filter"><input class="checkbox-filter" type="checkbox" /> <label>Entertainment</label></li>
+              <li class="filter"><input class="checkbox-filter" type="checkbox" /> <label>Others</label></li>
+              <li class="filter"><input class="checkbox-filter" type="checkbox" /> <label>Others</label></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="filters-card">
+          <h4 class="filter-name">Format Type</h4>
+
+          <div class="filter-card-content">
+            <ul class="filters-list">
+              <li class="filter"><input class="radio-filter" type="radio" id="figma" name="format-type" /> <label>Figma</label></li>
+              <li class="filter"><input class="radio-filter" type="radio" id="sketch" name="format-type" /> <label>Sketch</label></li>
+              <li class="filter"><input class="radio-filter" type="radio" id="adobe-xd" name="format-type" /> <label>Adobe XD</label></li>
+              <li class="filter"><input class="radio-filter" type="radio" id="adobe-photoshop" name="format-type" /> <label>Adobe Photoshop</label></li>
+              <li class="filter"><input class="radio-filter" type="radio" id="adobe-illustration" name="format-type" /> <label>Adobe Illustration</label></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="filters-card">
+          <h4 class="filter-name">Style</h4>
+
+          <div class="filter-content">
+            <div class="filters-list">
+              <div class="filter toggle-switch">
+                <div class="toggle-item">
+                  <input type="checkbox" id="minimalist" class="toggle-checkbox" />
+                  <label for="minimalist" class="toggle-label"></label>
+                  <span class="toggle-text">Minimalist</span>
+                </div>
+              </div>
+
+              <div class="filter toggle-switch">
+                <div class="toggle-item">
+                  <input type="checkbox" id="modern" class="toggle-checkbox" />
+                  <label for="modern" class="toggle-label"></label>
+                  <span class="toggle-text">Modern</span>
+                </div>
+              </div>
+
+              <div class="filter toggle-switch">
+                <div class="toggle-item">
+                  <input type="checkbox" id="playful" class="toggle-checkbox" />
+                  <label for="playful" class="toggle-label"></label>
+                  <span class="toggle-text">Playful</span>
+                </div>
+              </div>
+
+              <div class="filter toggle-switch">
+                <div class="toggle-item">
+                  <input type="checkbox" id="dark-mode" class="toggle-checkbox" />
+                  <label for="dark-mode" class="toggle-label"></label>
+                  <span class="toggle-text">Dark Mode</span>
+                </div>
+              </div>
+
+              <div class="filter toggle-switch">
+                <div class="toggle-item">
+                  <input type="checkbox" id="photocentric" class="toggle-checkbox" />
+                  <label for="photocentric" class="toggle-label"></label>
+                  <span class="toggle-text">Photocentric</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider-filter">
+          <h4 class="filter-name">Categories</h4>
+
+          <div class="price-filter">
+            <div class="slider-container">
+              <input type="range" class="price-slider" min="5" max="50" value="10" />
+              <input type="range" class="price-slider" min="5" max="50" value="40" />
+              <div class="slider-track"></div>
+            </div>
+            <div class="price-labels">
+              <span class="slider-price">€5</span>
+              <span class="slider-price">€50</span>
+            </div>
+          </div>
+        </div>
+
+        <button type="button" class="reset-filters"><img src="img/icons/buttons-symbols/x-close.svg" alt="img" />Clear all filters</button>
+      </aside>
+
+      <div class="catalog">
+        <div class="catalog-sorting">
+          <div class="sorting">
+            <div class="showing-results">
+              <button type="button" class="best-seller-sort">Best Seller <img class="chevron-down" src="img/icons/buttons-symbols/chevron-down.svg" alt="img" /></button>
+            </div>
+
+            <div class="items-shown">
+              <p>Showing 12 out of 120 results.</p>
+              <div class="result-layout">
+                <button type="button" class="album-layout"><img class="album" src="img/icons/buttons-symbols/album-layout.svg" alt="img" /></button>
+                <button type="button" class="listings-layout"><img class="listings" src="img/icons/buttons-symbols/list-layout.svg" alt="img" /></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="applied-filters">
+            <button type="button" class="ui-kit">UI-Kit<img src="img/icons/buttons-symbols/x-close.svg" alt="img" /></button>
+            <button type="button" class="ui-kit">UI-Kit<img src="img/icons/buttons-symbols/x-close.svg" alt="img" /></button>
+          </div>
+        </div>
+
+        <div class="grid-catalog">
+          <div class="catalog-product-card sold">
+            <a href="#" class="product-card-link">
+              <div class="product-image-wrapper">
+                <img class="product" src="img/products/lens-chronicles.png" alt="img" />
+                <span class="product-status sold"> SOLD OUT </span>
+              </div>
+            </a>
+            <div class="product-name-type">
+              <h5>Lens Chronicles</h5>
+              <p>Photography · Creative</p>
+            </div>
+            <div class="price-buy-fav">
+              <h5 class="cost">€15.99</h5>
+              <div class="product-buttons">
+                <button type="button" class="favourite"><img src="img/icons/buttons-symbols/heart.svg" alt="img" /></button>
+                <button type="button" class="add-to-cart"><img src="img/icons/buttons-symbols/shopping-bag.svg" alt="img" /></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="catalog-product-card">
+            <a href="#" class="product-card-link">
+              <div class="product-image-wrapper">
+                <img class="product" src="img/products/career-success.png" alt="img" />
+                <span class="product-status new"> NEW </span>
+              </div>
+            </a>
+            <div class="product-name-type">
+              <h5>Career Succes</h5>
+              <p>Guidance · Jobs</p>
+            </div>
+            <div class="price-buy-fav">
+              <h5 class="cost">€20.99</h5>
+              <div class="product-buttons">
+                <button type="button" class="favourite"><img src="img/icons/buttons-symbols/heart.svg" alt="img" /></button>
+                <button type="button" class="add-to-cart"><img src="img/icons/buttons-symbols/shopping-bag.svg" alt="img" /></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="catalog-product-card">
+            <a href="#" class="product-card-link">
+              <div class="product-image-wrapper">
+                <img class="product" src="img/products/dream-homes.png" alt="img" />
+                <span class="product-status popular"> POPULAR </span>
+              </div>
+            </a>
+            <div class="product-name-type">
+              <h5>Dream Homes</h5>
+              <p>Real Estate · Modern</p>
+            </div>
+            <div class="price-buy-fav">
+              <h5 class="cost">€45.99</h5>
+              <div class="product-buttons">
+                <button type="button" class="favourite"><img src="img/icons/buttons-symbols/heart.svg" alt="img" /></button>
+                <button type="button" class="add-to-cart"><img src="img/icons/buttons-symbols/shopping-bag.svg" alt="img" /></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="catalog-product-card">
+            <a href="#" class="product-card-link">
+              <div class="product-image-wrapper">
+                <img class="product" src="img/products/foodish-catering.png" alt="img" />
+                <span class="product-status popular"> POPULAR </span>
+              </div>
+            </a>
+            <div class="product-name-type">
+              <h5>Foodish Catering</h5>
+              <p>Food · Events</p>
+            </div>
+            <div class="price-buy-fav">
+              <h5 class="cost">€15.99</h5>
+              <div class="product-buttons">
+                <button type="button" class="favourite"><img src="img/icons/buttons-symbols/heart.svg" alt="img" /></button>
+                <button type="button" class="add-to-cart"><img src="img/icons/buttons-symbols/shopping-bag.svg" alt="img" /></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="catalog-product-card">
+            <a href="#" class="product-card-link">
+              <div class="product-image-wrapper">
+                <img class="product" src="img/products/caring-hearts.png" alt="img" />
+                <span class="product-status new"> NEW </span>
+              </div>
+            </a>
+            <div class="product-name-type">
+              <h5>Caring Hearts</h5>
+              <p>Healthcare · Support</p>
+            </div>
+            <div class="price-buy-fav">
+              <h5 class="cost">€19.99</h5>
+              <div class="product-buttons">
+                <button type="button" class="favourite"><img src="img/icons/buttons-symbols/heart.svg" alt="img" /></button>
+                <button type="button" class="add-to-cart"><img src="img/icons/buttons-symbols/shopping-bag.svg" alt="img" /></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="catalog-product-card sold">
+            <a href="#" class="product-card-link">
+              <div class="product-image-wrapper">
+                <img class="product" src="img/products/gaming-rise.png" alt="img" />
+                <span class="product-status sold"> SOLD OUT </span>
+              </div>
+            </a>
+            <div class="product-name-type">
+              <h5>Gaming Rise</h5>
+              <p>eSports · Trends</p>
+            </div>
+            <div class="price-buy-fav">
+              <h5 class="cost">€15.99</h5>
+              <div class="product-buttons">
+                <button type="button" class="favourite"><img src="img/icons/buttons-symbols/heart.svg" alt="img" /></button>
+                <button type="button" class="add-to-cart"><img src="img/icons/buttons-symbols/shopping-bag.svg" alt="img" /></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="catalog-product-card sold">
+            <a href="#" class="product-card-link">
+              <div class="product-image-wrapper">
+                <img class="product" src="img/products/edit-pro.png" alt="img" />
+                <span class="product-status sold"> SOLD OUT </span>
+              </div>
+            </a>
+            <div class="product-name-type">
+              <h5>Edit Pro</h5>
+              <p>Design · Tools</p>
+            </div>
+            <div class="price-buy-fav">
+              <h5 class="cost">€15.99</h5>
+              <div class="product-buttons">
+                <button type="button" class="favourite"><img src="img/icons/buttons-symbols/heart.svg" alt="img" /></button>
+                <button type="button" class="add-to-cart"><img src="img/icons/buttons-symbols/shopping-bag.svg" alt="img" /></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="catalog-product-card">
+            <a href="#" class="product-card-link">
+              <div class="product-image-wrapper">
+                <img class="product" src="img/products/banking-redifined.png" alt="img" />
+                <span class="product-status new"> NEW </span>
+              </div>
+            </a>
+            <div class="product-name-type">
+              <h5>Banking Redifined</h5>
+              <p>Finance · Secure</p>
+            </div>
+            <div class="price-buy-fav">
+              <h5 class="cost">€25.99</h5>
+              <div class="product-buttons">
+                <button type="button" class="favourite"><img src="img/icons/buttons-symbols/heart.svg" alt="img" /></button>
+                <button type="button" class="add-to-cart"><img src="img/icons/buttons-symbols/shopping-bag.svg" alt="img" /></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="catalog-product-card">
+            <a href="#" class="product-card-link">
+              <div class="product-image-wrapper">
+                <img class="product" src="img/products/exploring-sun.png" alt="img" />
+                <span class="product-status popular"> POPULAR </span>
+              </div>
+            </a>
+            <div class="product-name-type">
+              <h5>Exploring Sun</h5>
+              <p>Travel · Adventure</p>
+            </div>
+            <div class="price-buy-fav">
+              <h5 class="cost">€41.99</h5>
+              <div class="product-buttons">
+                <button type="button" class="favourite"><img src="img/icons/buttons-symbols/heart.svg" alt="img" /></button>
+                <button type="button" class="add-to-cart"><img src="img/icons/buttons-symbols/shopping-bag.svg" alt="img" /></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="catalog-product-card">
+            <a href="#" class="product-card-link">
+              <div class="product-image-wrapper">
+                <img class="product" src="img/products/admin-dash.png" alt="img" />
+                <span class="product-status popular"> POPULAR </span>
+              </div>
+            </a>
+            <div class="product-name-type">
+              <h5>Admin Dash</h5>
+              <p>Data · Tools</p>
+            </div>
+            <div class="price-buy-fav">
+              <h5 class="cost">€15.99</h5>
+              <div class="product-buttons">
+                <button type="button" class="favourite"><img src="img/icons/buttons-symbols/heart.svg" alt="img" /></button>
+                <button type="button" class="add-to-cart"><img src="img/icons/buttons-symbols/shopping-bag.svg" alt="img" /></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="catalog-product-card">
+            <a href="#" class="product-card-link">
+              <div class="product-image-wrapper">
+                <img class="product" src="img/products/analytical-dashboard.png" alt="img" />
+                <span class="product-status new"> NEW </span>
+              </div>
+            </a>
+            <div class="product-name-type">
+              <h5>Analytical Dashboard</h5>
+              <p>Data · Tools</p>
+            </div>
+            <div class="price-buy-fav">
+              <h5 class="cost">€10.99</h5>
+              <div class="product-buttons">
+                <button type="button" class="favourite"><img src="img/icons/buttons-symbols/heart.svg" alt="img" /></button>
+                <button type="button" class="add-to-cart"><img src="img/icons/buttons-symbols/shopping-bag.svg" alt="img" /></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="catalog-product-card sold">
+            <a href="#" class="product-card-link">
+              <div class="product-image-wrapper">
+                <img class="product" src="img/products/kindergarten.png" alt="img" />
+                <span class="product-status sold"> SOLD OUT </span>
+              </div>
+            </a>
+            <div class="product-name-type">
+              <h5>Kindergarten</h5>
+              <p>Education · kids</p>
+            </div>
+            <div class="price-buy-fav">
+              <h5 class="cost">€15.99</h5>
+              <div class="product-buttons">
+                <button type="button" class="favourite"><img src="img/icons/buttons-symbols/heart.svg" alt="img" /></button>
+                <button type="button" class="add-to-cart"><img src="img/icons/buttons-symbols/shopping-bag.svg" alt="img" /></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button type="button" class="load-more-catalog">Load more</button>
+      </div>
+    </main>
+
+    <footer>
+      <div class="top-footer-section">
+        <div class="footer-logo-and-text">
+          <img class="footer-logo" src="img/icons/pixmart-logo.svg" alt="img" />
+          <p class="logo-text">
+            Your premium digital assets solution with<br />
+            high quality and comprehensive range of<br />
+            products and services.
+          </p>
+        </div>
+
+        <div class="footer-nav">
+          <div class="footer-nav-menu">
+            <p class="menu">Company</p>
+
+            <div class="menu-contents">
+              <ul>
+                <li><a href="#">Homepage v1</a></li>
+                <li><a href="#">Homepage v2</a></li>
+                <li><a href="#">Homepage v3</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blog Articles</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-nav-menu">
+            <p class="menu">Products</p>
+
+            <div class="menu-contents">
+              <ul>
+                <li><a href="#">Website</a></li>
+                <li><a href="#">Mobile App</a></li>
+                <li><a href="#">social Media Feeds</a></li>
+                <li><a href="#">Presentation</a></li>
+                <li><a href="#">Product Mockups</a></li>
+                <li><a href="#">Illustrations</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-nav-menu">
+            <p class="menu">Account</p>
+
+            <div class="menu-contents">
+              <ul>
+                <li><a href="#">Your Cart</a></li>
+                <li><a href="#">Check Out</a></li>
+                <li><a href="#">Refund Policy</a></li>
+                <li><a href="#">Company Policy</a></li>
+                <li><a href="#">Send A Message</a></li>
+                <li><a href="#">Costumer Support</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="center-footer-section">
+        <div class="social-buttons">
+          <button type="button" class="socials">
+            <img class="social-media" src="img/icons/socials/twitter.svg" alt="img" />
+          </button>
+
+          <button type="button" class="socials">
+            <img class="social-media" src="img/icons/socials/facebook.svg" alt="img" />
+          </button>
+
+          <button type="button" class="socials">
+            <img class="social-media" src="img/icons/socials/telegram.svg" alt="img" />
+          </button>
+        </div>
+
+        <div class="newsletter">
+          <form action="submit" method="post">
+            <label for="email"
+              >Subscribe to <br />
+              Design Newsletter</label
+            >
+
+            <input type="email" id="email" name="email" placeholder="Enter your email address..." required />
+            <button class="email-sub" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="bottom-footer-section">
+        <div class="misc">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms and Condition</a>
+          <a href="#">Site Map</a>
+        </div>
+
+        <div class="copyright">
+          <p>Copyright © 2024 Pixmart. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
